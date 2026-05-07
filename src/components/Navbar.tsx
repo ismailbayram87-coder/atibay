@@ -36,12 +36,19 @@ export default function Navbar({ lang, dict }: { lang: string, dict: any }) {
     { href: `/${lang}/contact`, label: dict.contact },
   ]
 
+  const getImagePath = (src: string) => {
+    if (src && src.startsWith('/') && !src.startsWith('http')) {
+      return `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${src}`
+    }
+    return src
+  }
+
   return (
     <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? 'glass py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <Link href={`/${lang}`} className="flex items-center gap-3 group">
           {media.logoLight ? (
-            <Image src={media.logoLight} alt="Logo" width={240} height={80} className="h-16 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+            <Image src={getImagePath(media.logoLight)} alt="Logo" width={240} height={80} className="h-16 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
           ) : (
             <div className="bg-accent p-2 rounded-lg group-hover:bg-accent-hover transition-colors">
               <Factory className="w-8 h-8 text-white" />

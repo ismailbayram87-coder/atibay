@@ -13,6 +13,13 @@ export default async function Home({
   const dict = await getDictionary(resolvedParams.lang)
   const lang = resolvedParams.lang
 
+  const getImagePath = (src: string) => {
+    if (src && src.startsWith('/') && !src.startsWith('http')) {
+      return `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${src}`
+    }
+    return src
+  }
+
   const projectImages = [media.project1, media.project2, media.project3]
 
   return (
@@ -22,7 +29,7 @@ export default async function Home({
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-slate-900/70 z-10" />
           <Image 
-            src={media.homeHero}
+            src={getImagePath(media.homeHero)}
             alt="Industrial Engineering" 
             fill
             className="object-cover"
@@ -90,7 +97,7 @@ export default async function Home({
             {[1, 2, 3].map((item, idx) => (
               <div key={item} className="group relative overflow-hidden rounded-xl aspect-[4/3] cursor-pointer">
                 <Image 
-                  src={projectImages[idx]}
+                  src={getImagePath(projectImages[idx])}
                   alt={`Project ${item}`}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"

@@ -4,6 +4,13 @@ import settings from '@/data/settings.json';
 import media from '@/data/media.json';
 
 export default function Footer({ dict }: { dict: any }) {
+  const getImagePath = (src: string) => {
+    if (src && src.startsWith('/') && !src.startsWith('http')) {
+      return `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${src}`
+    }
+    return src
+  }
+
   return (
     <footer className="bg-slate-950 pt-16 pb-8 border-t border-slate-800">
       <div className="container mx-auto px-4 md:px-6">
@@ -11,7 +18,7 @@ export default function Footer({ dict }: { dict: any }) {
           <div>
             <div className="flex items-center gap-2 mb-6">
               {media.logoLight ? (
-                <Image src={media.logoLight} alt="Logo" width={200} height={60} className="h-14 w-auto object-contain" />
+                <Image src={getImagePath(media.logoLight)} alt="Logo" width={200} height={60} className="h-14 w-auto object-contain" />
               ) : (
                 <div className="bg-accent p-2 rounded-lg">
                   <Factory className="w-6 h-6 text-white" />
