@@ -1,4 +1,5 @@
 import { Factory, Mail, MapPin, Phone } from "lucide-react";
+import Image from 'next/image';
 import settings from '@/data/settings.json';
 import media from '@/data/media.json';
 
@@ -10,7 +11,7 @@ export default function Footer({ dict }: { dict: any }) {
           <div>
             <div className="flex items-center gap-2 mb-6">
               {media.logoLight ? (
-                <img src={media.logoLight} alt="Logo" className="h-14 w-auto object-contain" />
+                <Image src={media.logoLight} alt="Logo" width={200} height={60} className="h-14 w-auto object-contain" />
               ) : (
                 <div className="bg-accent p-2 rounded-lg">
                   <Factory className="w-6 h-6 text-white" />

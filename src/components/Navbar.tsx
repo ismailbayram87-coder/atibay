@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { Menu, X, Globe, Factory } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 import media from '@/data/media.json'
 import settings from '@/data/settings.json'
 
@@ -40,7 +41,7 @@ export default function Navbar({ lang, dict }: { lang: string, dict: any }) {
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <Link href={`/${lang}`} className="flex items-center gap-3 group">
           {media.logoLight ? (
-            <img src={media.logoLight} alt="Logo" className="h-16 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+            <Image src={media.logoLight} alt="Logo" width={240} height={80} className="h-16 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
           ) : (
             <div className="bg-accent p-2 rounded-lg group-hover:bg-accent-hover transition-colors">
               <Factory className="w-8 h-8 text-white" />
