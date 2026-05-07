@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "corporate": "Kurumsal",
+    "services": "Hizmetler",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  },
+  "home": {
+    "heroTitle": "Geleceğin Mühendislik Çözümleri ve Projeleri",
+    "heroSubtitle": "Endüstriyel standartlarda yenilikçi, güvenilir ve sürdürülebilir projeler üretiyoruz.",
+    "cta": "Projelerimizi İnceleyin",
+    "whyUsTitle": "Neden Biz?",
+    "whyUsDesc1": "Uzman Mühendislik Kadrosu",
+    "whyUsDesc2": "Uluslararası Standartlarda Kalite",
+    "whyUsDesc3": "Sürdürülebilir ve Güvenilir Çözümler",
+    "featuredProjects": "Öne Çıkan Projeler"
+  },
+  "corporate": {
+    "title": "Hakkımızda",
+    "vision": "Vizyonumuz",
+    "visionText": "Sektörde öncü ve yenilikçi mühendislik çözümleri sunarak global ölçekte tanınan bir marka olmak.",
+    "mission": "Misyonumuz",
+    "missionText": "Müşterilerimizin beklentilerini aşan, kaliteli ve güvenilir projeler hayata geçirmek."
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "service1": "Endüstriyel Tesis Tasarımı",
+    "service1Desc": "Yüksek verimlilik odaklı, modern ve güvenilir tesis tasarımları.",
+    "service2": "Proje Yönetimi",
+    "service2Desc": "Projelerin zamanında ve bütçe dahilinde başarıyla tamamlanması.",
+    "service3": "Mühendislik Danışmanlığı",
+    "service3Desc": "Uzman kadromuzla teknik destek ve danışmanlık hizmetleri."
+  },
+  "projects": {
+    "title": "Projelerimiz",
+    "viewDetails": "Detayları İncele"
+  },
+  "contact": {
+    "title": "İletişime Geçin",
+    "address": "Adres",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "formName": "Adınız",
+    "formEmail": "E-posta Adresiniz",
+    "formMessage": "Mesajınız",
+    "submit": "Gönder",
+    "whatsappText": "Bize WhatsApp'tan ulaşın"
+  },
+  "footer": {
+    "copyright": "Tüm Hakları Saklıdır."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "home": "Home",
+    "corporate": "Corporate",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroTitle": "Engineering Solutions of the Future",
+    "heroSubtitle": "We produce innovative, reliable and sustainable projects at industrial standards.",
+    "cta": "View Our Projects",
+    "whyUsTitle": "Why Us?",
+    "whyUsDesc1": "Expert Engineering Team",
+    "whyUsDesc2": "International Quality Standards",
+    "whyUsDesc3": "Sustainable and Reliable Solutions",
+    "featuredProjects": "Featured Projects"
+  },
+  "corporate": {
+    "title": "About Us",
+    "vision": "Our Vision",
+    "visionText": "To be a globally recognized brand by providing pioneering and innovative engineering solutions in the sector.",
+    "mission": "Our Mission",
+    "missionText": "To realize high-quality and reliable projects that exceed our customers' expectations."
+  },
+  "services": {
+    "title": "Our Services",
+    "service1": "Industrial Facility Design",
+    "service1Desc": "High efficiency-oriented, modern and reliable facility designs.",
+    "service2": "Project Management",
+    "service2Desc": "Successful completion of projects on time and within budget.",
+    "service3": "Engineering Consulting",
+    "service3Desc": "Technical support and consultancy services with our expert team."
+  },
+  "projects": {
+    "title": "Our Projects",
+    "viewDetails": "View Details"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "formName": "Your Name",
+    "formEmail": "Your Email",
+    "formMessage": "Your Message",
+    "submit": "Send",
+    "whatsappText": "Reach us on WhatsApp"
+  },
+  "footer": {
+    "copyright": "All Rights Reserved."
+  }
+}
