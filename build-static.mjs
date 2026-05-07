@@ -24,9 +24,18 @@ if (existsSync(nextDir)) {
 try {
   // 2. Set environment variable and build
   console.log('Running Next.js build...');
+  
+  const basePath = process.env.GITHUB_ACTIONS && process.env.GITHUB_REPOSITORY
+    ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}`
+    : '';
+    
   execSync('npx next build', { 
     stdio: 'inherit',
-    env: { ...process.env, STATIC_EXPORT: 'true' }
+    env: { 
+      ...process.env, 
+      STATIC_EXPORT: 'true',
+      NEXT_PUBLIC_BASE_PATH: basePath
+    }
   });
   console.log('Static export completed successfully. Output is in the "out" directory.');
 } catch (error) {
